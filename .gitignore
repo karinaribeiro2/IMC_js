@@ -1,0 +1,11 @@
+# Ignorar diretórios e arquivos desnecessários
+node_modules/
+dist/
+build/
+img/  # Se não quiser versionar as imagens
+
+# Arquivos do sistema e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
