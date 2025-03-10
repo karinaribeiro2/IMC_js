@@ -3,7 +3,8 @@ document.querySelector('input[type="button"]').addEventListener('click', functio
     const alturaCm = parseFloat(document.querySelector('#height input').value);
     const peso = parseFloat(document.querySelector('#weight input').value);
 
-    if (!nome || isNaN(alturaCm) || isNaN(peso)) {
+    if (!nome || isNaN(alturaCm) || isNaN(peso) || alturaCm <= 0 || peso <= 0) {
+        alert("Por favor, insira valores válidos!");
         return;
     }
 
